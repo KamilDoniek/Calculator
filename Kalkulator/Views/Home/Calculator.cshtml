@@ -1,0 +1,17 @@
+@model Kalkulator.Models.Calculator
+@{
+    ViewData["Title"] = "Kalkulator";
+
+}
+<h1>Kalkulator</h1>
+<form action="Calculator">
+    <p>First Number</p>
+    <input type="number" asp-for="firstNumber"/>
+    <p>Second Number</p>
+    <input type="number" asp-for="SecondNumber"/>
+    <p>+-/*</p>
+    <input type="text" asp-for="symbols"/>
+    <input type="submit"/>
+</form>
+
+@ViewBag.wynik
